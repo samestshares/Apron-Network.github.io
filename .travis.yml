@@ -10,7 +10,9 @@ install:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  token: $GITHUB_TOKEN
+  strategy: git
+  fqdn: apron.network
   local_dir: _site
   target_branch: main
   on:
