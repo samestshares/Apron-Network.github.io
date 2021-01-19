@@ -1,0 +1,49 @@
+<script src="{{site.url}}/assets/js/jquery-3.3.1.min.js"></script>
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+
+
+
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+
+    $(function () {
+        console.log(window.location.href)
+        let pathname = window.location.href;
+        if(pathname.indexOf('index')>-1){
+            $(".index").addClass("active");
+        }else if(pathname.indexOf('blog')>-1){
+            $(".navbar-nav li").removeClass("active");
+            $(".blog").addClass("active");
+        }else if(pathname.indexOf('about')>-1){
+            $(".navbar-nav li").removeClass("active");
+            $(".about").addClass("active");
+        }
+
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+
+<script src="{{site.url}}/assets/js/bootstrap.min.js"></script>

@@ -1,0 +1,241 @@
+{% include head.html %}
+<body>
+{% include header.html %}
+<section id="home" class="w3l-banner py-5">
+    <div class="container py-lg-5 py-md-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-12 mt-lg-0 mt-4 wow fadeInLeft" data-wow-delay="0.2s">
+                <span class="title-small mb-2">Apron</span>
+                <h3 class="mb-2 title-big mb-4">{% t homepage.slides.title %}</h3>
+                <p>{% t homepage.slides.description %}</p>
+                <div class="mt-sm-5 mt-4">
+                    <a class="btn btn-primary btn-style" href="#">{% t homepage.slides.button %}</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-8 col-sm-10 mt-lg-0 mt-5">
+                <div class="img-effect text-lg-center">
+                    <img src="assets/images/banner2.png" alt="banner" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w3l-homeblock1" id="features">
+    <div class="w3-services-ab py-5">
+        <div class="container py-lg-5 py-md-4">
+            <span class="title-small text-center mb-2  wow zoomIn" data-wow-delay="0.2s">{% t homepage.advantage.subTitle %}</span>
+            <h3 class="title-big text-center mb-5  wow zoomIn" data-wow-delay="0.2s">{% t homepage.advantage.title %}</h3>
+            <div class="w3-services-grids">
+                <div class="row w3-services-right-grid">
+                    <div class="col-lg-4">
+                        <img src="assets/images/mobile2.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-8 mt-lg-0 mt-5">
+                        <div class="fea-gd-vv row">
+                            <div class="col-md-6 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="float-lt feature-gd color-orange">
+                                    <div class="icon">
+                                        <img src="assets/images/backup.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="icon-info">
+                                        <h5>{% t homepage.advantage.li1Title %}</h5>
+                                        <p>{% t homepage.advantage.li1Descrption %}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-md-0 mt-4 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="float-mid feature-gd color-green">
+                                    <div class="icon">
+                                        <img src="assets/images/team.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="icon-info">
+                                        <h5>{% t homepage.advantage.li2Title %}</h5>
+                                        <p>{% t homepage.advantage.li2Descrption %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="float-rt feature-gd color-blue">
+                                    <div class="icon">
+                                        <img src="assets/images/tags.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="icon-info">
+                                        <h5>{% t homepage.advantage.li3Title %}</h5>
+                                        <p>{% t homepage.advantage.li3Descrption %}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mt-4 pt-md-2 wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="float-lt feature-gd color-pink">
+                                    <div class="icon">
+                                        <img src="assets/images/program.png" alt="" class="img-fluid" />
+                                    </div>
+                                    <div class="icon-info">
+                                        <h5>{% t homepage.advantage.li4Title %}</h5>
+                                        <p>{% t homepage.advantage.li4Descrption %}</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="w3l-bottom-grids-6 py-5">
+    <div class="container py-lg-5 py-md-4">
+        <span class="title-small text-center mb-2  wow zoomIn" data-wow-delay="0.2s">{% t homepage.chooseTop.subTitle %}</span>
+        <h3 class="title-big text-center mb-5  wow zoomIn" data-wow-delay="0.2s">{% t homepage.chooseTop.title %}</h3>
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            {% for item in site.translations[site.lang].homepage.chooselist %}
+            <div class="col-lg-4 col-md-6 grids-feature mt-lg-4 mt-4 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="area-box">
+                    <span class="{{ item.classname }}"></span>
+                    <h4><a class="title-head">{{ item.liTitle }}</a></h4>
+                    <p>{{ item.liDescrption }}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+
+
+<section class="w3l-specification-6 py-5">
+    <div class="specification-6-mian py-lg-5 py-md-4  wow fadeInUp" data-wow-delay="0.4s">
+        <div class="container">
+            <div class="align-counter-6-inf-cols row">
+                <div class="counter-6-inf-left col-lg-6">
+
+                    <h3 class="title-big">{% t homepage.labs.subTitle %}</h3>
+                    <p class="title-small-white">{% t homepage.labs.title %}</p>
+                </div>
+                <div class="counter-6-inf-right col-lg-6">
+                    {% for item in site.translations[site.lang].homepage.labslist %}
+                    <div class="specification">
+                        <div class="specification-icon">
+                            <span class="{{ item.classname }}"></span>
+                        </div>
+                        <div class="specification-info">
+                            <h6><a>{{ item.liTitle }}</a></h6>
+                            <p>{{ item.liDescrption }}</p>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact-area py-5">
+        <div class="container">
+            <div class="row">
+                <div class="teamTop col-lg-8 offset-lg-2 col-12 wow zoomIn" data-wow-delay="0.4s">
+                    <span class="title-small text-center mb-2  wow zoomIn" data-wow-delay="0.2s">Apron Network's</span>
+                    <h3 class="title-big text-center mb-5 section-title wow zoomIn" data-wow-delay="0.2s">{% t homepage.team.title %}</h3>
+
+                </div>
+            </div>
+            <div class="contact-inner services wow fadeInUp" data-wow-delay="0.4s">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="assets/images/service1.jpg" alt="#">
+                            </div>
+                            <div class="content">
+                                <h4><a href="#">Yifei Zhang</a><span class="job">CEO </span></h4>
+                                <p>{% t homepage.team.li1Descrption %} </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="assets/images/service3.jpg" alt="#">
+                            </div>
+                            <div class="content">
+                                <h4><a href="#">Jim Clancy</a><span class="job">CTO </span></h4>
+                                <p>{% t homepage.team.li3Descrption %}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="single-service">
+                            <div class="service-image">
+                                <img src="assets/images/service2.jpg" alt="#">
+                            </div>
+                            <div class="content">
+                                <h4><a href="#">Sean</a><span class="job">CMO </span></h4>
+                                <p>{% t homepage.team.li2Descrption %}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+</section>
+
+{% include homeNews.html %}
+
+{% include roadmap.html %}
+
+
+<div class="w3l-follow-social py-5">
+    <div class="container">
+        <div class="social-accounts">
+            <div class="align-self">
+                <h4>{% t homepage.media.description %}</h4>
+            </div>
+            <div class="text-lg-right">
+                <ul class="social-icons">
+                  <li class="facebook">
+                    <a href="https://twitter.com/apron_network" target="_blank">
+                      <span class="fa fa-twitter" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="twitter">
+                    <a href="https://github.com/Apron-Network/" target="_blank" >
+                      <span class="fa fa-github" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="dribbble">
+                    <a href="https://medium.com/@apronnetwork" target="_blank">
+                      <span class="fa fa-medium" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li class="google">
+                    <a href="https://t.me/apronnetwork" target="_blank">
+                      <span class="fa fa-telegram" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                    <li class="discord mr-0">
+                        <a href="https://discord.gg/Bu6HzJP2YY" target="_blank"><img src="./assets/images/discord.png" alt=""></a>
+
+                    </li>
+                </ul>
+              </div>
+        </div>
+
+    </div>
+</div>
+{% include footer.html %}
+{% include footscript.html %}
+    <script src="assets/js/wow.js"></script>
+  <script src="assets/js/fishBone.js"></script>
+  </body>
+  </html>

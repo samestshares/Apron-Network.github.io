@@ -1,0 +1,25 @@
+<section class="w3l-stats py-5" >
+    <div class="gallery-inner container py-lg-5 py-md-4 testimonials-sec">
+        <h3 class="title-big text-center mb-5">{% t nav.news %}</h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="grids-area-hny main-cont-wthree-fea row">
+                    {%- capture blogurl -%}
+                    {% if site.lang == 'en' %} {{site.url}}{% else%}{{site.url}}/{{site.lang}}{%- endif -%}
+                    {%- endcapture -%}
+                    {% for post in site.posts limit: 3%}
+                    <div  class="col-lg-4 col-md-6 grids-feature my-lg-4 mt-4">
+                        <div class="slide-item">
+                            <div class="testimonial-box">
+                                <p class="text">{{ post.content | strip_html}}</p>
+                                <h4 class="name"><a href="{{blogurl}}{{ post.url}}" target="_blank">{{ post.title}}</a></h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

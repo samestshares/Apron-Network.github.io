@@ -1,0 +1,78 @@
+{% include head.html %}
+<body>
+{% include header.html %}
+
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-contact py-sm-5 py-4">
+        <div class="container grid-breadcrumb py-2">
+            <h2 class="title-big">{% t nav.news %}</h2>
+            <ul class="breadcrumbs-custom-path mt-md-2">
+                <li><a href="index.html">{% t nav.home %}</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>{% t nav.news %}</li>
+            </ul>
+        </div>
+    </div>
+</section>
+{%- capture blogurl -%}
+{% if site.lang == 'en' %} {{site.url}}{% else%}{{site.url}}/{{site.lang}}{%- endif -%}
+{%- endcapture -%}
+
+<section class="w3l-servicesblock1 py-5" >
+    <div class="container py-lg-5 py-md-4 testimonials-sec noM">
+        <div class="col-12">
+            <div class="grids-area-hny main-cont-wthree-fea row">
+                {% for post in paginator.posts %}
+                    <div  class="col-lg-4 col-md-6 grids-feature my-lg-4 mt-4">
+                        <div class="slide-item">
+                            <div class="testimonial-box">
+                                <p class="text">{{ post.content | strip_html}}</p>
+                                <h4 class="name"><a href="{{blogurl}}{{ post.url}}" target="_blank" title="{{ post.title}}">{{ post.title}}</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    {% if paginator.total_pages > 1 %}
+
+
+
+                    <div class="pagination center">
+                        <ul class="pagination-list">
+                            {% if paginator.previous_page %}
+                                <li><a href="{{blogurl}}{{ paginator.previous_page_path }}"><i class="fa fa-arrow-left"></i></a></li>
+                            {% else %}
+                                <span><i class="fa fa-arrow-left"></i></span>
+                            {% endif %}
+
+                            {% for page in (1..paginator.total_pages) %}
+                                {% if page == paginator.page %}
+                                    <li class="active"><a href="#">{{ page }}</a></li>
+                                {% elsif page == 1 %}
+                                    <li><a href="{{blogurl}}/blog">{{ page }}</a></li>
+                                {% else %}
+                                    <li><a href="{{blogurl}}{{site.paginate_path | replace: ':num', page}}">{{ page }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+
+                            {% if paginator.next_page %}
+                                <li><a href="{{blogurl}}{{ paginator.next_page_path }}"><i class="fa fa-arrow-right"></i></a></li>
+                            {% else %}
+                                <span><i class="fa fa-arrow-right"></i></span>
+                            {% endif %}
+
+                        </ul>
+                    </div>
+
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include footer.html %}
+{% include footscript.html %}
+
+</body>
+</html>

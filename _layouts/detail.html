@@ -1,0 +1,66 @@
+{% include head.html %}
+<body>
+{% include header.html %}
+
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-contact py-sm-5 py-4">
+        <div class="container grid-breadcrumb py-2">
+            <h2 class="title-big">{% t nav.news %}</h2>
+            <ul class="breadcrumbs-custom-path mt-md-2">
+                <li><a href="index.html">{% t nav.home %}</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>{% t nav.news %} </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="w3l-servicesblock1 py-5 blog-single" >
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1 col-12">
+                <div class="post-details">
+                    <h2 class="post-title"><a>{{page.title}}</a></h2>
+                    <ul class="custom-flex post-meta">
+                        <li>
+                                <i class="fa fa-calendar"></i>
+                                {{page.date | date:"%Y/%m/%d "}}
+                        </li>
+                    </ul>
+                    <div class="contentBrdr">{{content}}</div>
+
+                    {%- capture blogurl -%}
+                    {% if site.lang == 'en' %} {{site.url}}{% else%}{{site.url}}/{{site.lang}}{%- endif -%}
+                    {%- endcapture -%}
+
+                    <div class="detail-post-na row">
+                        {% if page.previous.title%}
+                        <div class="prev-post col-lg-6">
+                            <span>Prev Post</span>
+                            <a href="{{blogurl}}{{page.previous.url}}">{{page.previous.title}}<i class="fa fa-arrow-left"></i></a>
+                        </div>
+                        {% endif %}
+                        {% if page.next.title%}
+                        <div class="next-post col-lg-6">
+                            <span>Next Post</span>
+                            <a href="{{blogurl}}{{page.next.url}}">{{page.next.title}}<i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        {% endif %}
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% include footer.html %}
+{% include footscript.html %}
+<script>
+    $(document).ready(function() {
+        //为超链接加上target='_blank'属性
+        $('.contentBrdr a[href^="http"]').each(function() {
+            $(this).attr('target', '_blank');
+        });
+    });
+</script>
+</body>
+</html>

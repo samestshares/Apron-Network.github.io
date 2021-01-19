@@ -1,0 +1,17 @@
+language: ruby
+cache: bundler
+rvm:
+- 2.3.1
+before_install:
+  - gem update --system
+  - gem install bundler
+install:
+- bundle install
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: _site
+  target_branch: main
+  on:
+    branch: develop

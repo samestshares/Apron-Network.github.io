@@ -1,0 +1,70 @@
+<section class="w3l-footer">
+    <footer class="footer-28">
+        <div class="footer-bg-layer">
+            <div class="container py-lg-3">
+                <div class="row footer-top-28">
+                    <div class="col-lg-5 footer-list-28 mt-5">
+                        <h6 class="footer-title-28">Apron Network</h6>
+                        <ul>
+                            <li>
+                                <p><strong>Email</strong> : <a href="mailto:contact@apron.network">contact@apron.network</a></p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-sm-4 col-12 footer-list-28 mt-5">
+
+                                {%- capture pageurl -%}
+                                {% if site.lang == 'en' %} {{site.url}}{% else%}{{site.url}}/{{site.lang}}{%- endif -%}
+                                {%- endcapture -%}
+
+                                <ul>
+                                    <li><a href="#">{% t nav.documents %}</a></li>
+                                    <li><a href="#">{% t nav.market %}</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 col-12 footer-list-28 mt-5">
+                                <ul>
+                                    <li><a href="#">{% t nav.explorer %}</a></li>
+                                    <li><a href="{{pageurl}}/whitepaper.pdf" target="_blank">{% t nav.whitepaper %}</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4 footer-list-28 mt-5">
+                                <ul>
+                                    <li><a href="{{pageurl}}/blog">{% t nav.blog %}</a></li>
+                                    <li><a href="{{pageurl}}/about.html">{% t nav.about %}</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Go to top">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <script>
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+    </footer>
+</section>

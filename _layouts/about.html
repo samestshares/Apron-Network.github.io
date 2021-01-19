@@ -1,0 +1,37 @@
+{% include head.html %}
+<body>
+{% include header.html %}
+<section class="w3l-about-breadcrumb text-left">
+    <div class="breadcrumb-bg breadcrumb-bg-contact py-sm-5 py-4">
+        <div class="container grid-breadcrumb py-2">
+            <h2 class="title-big">{% t nav.about %}</h2>
+            <ul class="breadcrumbs-custom-path mt-md-2">
+                <li><a href="index.html">{% t nav.home %}</a></li>
+                <li class="active"><span class="fa fa-arrow-right mx-2" aria-hidden="true"></span>{% t nav.about %} </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="w3l-servicesblock1 py-5" >
+    <div class="project-details">
+        <div class="container py-lg-5 py-md-4 ">
+            <div class="cwp4-two row">
+                <div class="cwp4-image col-lg-7 mb-lg-0 mb-md-5 mb-4 pr-lg-5 ">
+                    <a class="d-block"><img src="./assets/images/analytics2.png" class="radius-image img-fluid" alt=""></a>
+                </div>
+                <div class="cwp4-text col-lg-5 ">
+<!--                    <div class="quote-icon bg-blue">-->
+<!--                        A-->
+<!--                    </div>-->
+                    {% t aboutus.description %}
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% include footer.html %}
+{% include footscript.html %}
+
+</body>
+</html>

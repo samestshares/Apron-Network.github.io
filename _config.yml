@@ -1,0 +1,18 @@
+index_title: Apron Network | The entrance of Web 3.0 World!
+
+
+url: ""
+baseurl: ""
+
+plugins:
+  - jekyll-paginate
+
+
+languages: ["en", "cn"]
+exclude_from_localizations: ["javascript", "images", "css"]
+
+paginate: 6
+paginate_path: "/blog/:num/"
+
+## Exclude files from build folder
+exclude: ['Rakefile', 'Gemfile', 'Gemfile.lock', 'package.json', 'package-lock.json']
