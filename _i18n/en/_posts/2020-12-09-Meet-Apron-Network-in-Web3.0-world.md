@@ -24,9 +24,9 @@ Matching infrastructure services to the demands of DAPP developers is the essenc
 The Apron Node is the component Node of the Apron Network, developed using the Substrate framework, with OCW enabled.
 
 That’s it, thanks for reading. You can also find me via the following links:  <br/>
-Website: [http://apron.com/](http://apron.com/)  
+Website: [http://arpon.network/](http://arpon.network/)  
 Github: [https://github.com/apron-network](https://github.com/apron-network)  
 Twitter: [https://twitter.com/apronofficial1](https://twitter.com/apronofficial1)  
 Medium: [https://medium.com/@apron.network](https://medium.com/@apron.network)  
-Email: [apron@apron.pro](mailto:apron@apron.pro)  
+Email: [apron@arpon.network](mailto:apron@arpon.network)  
 
