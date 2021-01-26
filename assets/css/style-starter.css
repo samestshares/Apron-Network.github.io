@@ -10817,10 +10817,10 @@ ul.social-icons li a:hover {
   background: transparent;
   }
 
-ul.social-icons li.facebook a span.fa {
+ul.social-icons li.github a span.fa {
   color: #3b5998; }
 
-/*ul.social-icons li.facebook a:hover {*/
+/*ul.social-icons li.github a:hover {*/
 /*  background-color: #3b5998; }*/
 
 ul.social-icons li.twitter a span.fa {
@@ -10829,22 +10829,22 @@ ul.social-icons li.twitter a span.fa {
 /*ul.social-icons li.twitter a:hover {*/
 /*  background-color: #1da1f2; }*/
 
-ul.social-icons li.dribbble a span.fa {
+ul.social-icons li.medium a span.fa {
   color: #ea4c89; }
 
-/*ul.social-icons li.dribbble a:hover {*/
+/*ul.social-icons li.medium a:hover {*/
 /*  background-color: #ea4c89; }*/
 
-ul.social-icons li.google a span.fa {
+ul.social-icons li.telegram a span.fa {
   color: #dd4b39; }
 
-/*ul.social-icons li.google a:hover {*/
+/*ul.social-icons li.telegram a:hover {*/
 /*  background-color: #dd4b39; }*/
 ul.social-icons li.discord  img{
   width: 18px;
   text-align: center;
 }
-/*ul.social-icons li.google a:hover {*/
+/*ul.social-icons li.telegram a:hover {*/
 /*  background-color: #dd4b39;*/
 /*}*/
 
