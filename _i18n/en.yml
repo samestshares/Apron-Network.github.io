@@ -14,33 +14,33 @@ nav:
 homepage:
   slides:
     title: DECENTRALIZED INFRASTRUCTURE SERVICE NETWORK
-    description: An infrastructure platform for DApp development, DApp users, and basic operation services.
+    description: A decentralized platform that provides infrastructure services for DApp developers,DApp users,and operators.
     button:  Get Started
   advantage:
     subTitle: WE FOCUS ON
-    title: infrastructure services
-    li1Title: Quickly
-    li1Descrption: Apron API enable DApp developers to quickly connect to the network
-    li2Title: More options
-    li2Descrption: Service rankings in the Apron Market provide more options for DApp developers
-    li3Title: Save costs
+    title: INFRASTRUCTURE SERVICES
+    li1Title: SPEEDY
+    li1Descrption: Apron API enables DApp developers to connect to the network more quickly
+    li2Title: USER-TAILORED
+    li2Descrption: Service Rankings in the Apron Market provide more options for DApp developers
+    li3Title: ECONOMICAL
     li3Descrption: DApp paying fees on demand can better help developers save costs
-    li4Title: Full-chain ecology
+    li4Title: DIVERSE
     li4Descrption: Apron will support full-chain ecology to help DApp developers choose more blockchain networks
   chooseTop:
     subTitle: APPLICATION DEVELOPERS ARE KEEN TO USE APRON
-    title: Provides more secure, stable and rich functionality
+    title: Apron provides more secure, stable and rich functionality
   chooselist:
     - liTitle: Greater choice API services
       classname: fa fa-database
-      liDescrption: Multiple services API interfaces, node data, Oracle data, etc.
+      liDescrption: Multiple services API interfaces, node data, oracle data, etc.
     - liTitle: Security guarantees
       classname: fa fa-university
-      liDescrption: API service providers are penalized for mortgaging assets if services are not guaranteed.
+      liDescrption: API services providers are penalized for mortgaging assets if services are not guaranteed.
     - liTitle: Multi-link ecological API interface
       classname: fa fa-cube
       liDescrption: Access Polkdot、Eth、Eos、Filcion and other public chains to serve more application developers.
-    - liTitle: Instant Available
+    - liTitle: Instant availability
       classname: fa fa-clock-o
       liDescrption: Just write a piece of code to access your application.
     - liTitle: Apron market
@@ -52,19 +52,19 @@ homepage:
   labslist:
     - liTitle: Strong support
       classname: fa fa-pencil-square-o
-      liDescrption: We have experts around the world who can provide Apron Network with comprehensive technical support and technical support.
+      liDescrption: We have experts around the world to provide Apron Network with comprehensive technical support.
     - liTitle: Business support
       classname: fa fa-television
-      liDescrption: We can provide you with a portion Apron token support your use of API services if you have good DApp projects.
+      liDescrption: Apron tokens would be rewarded to support your use of API services if you build DApp projects on Apron.
     - liTitle: Special customization
       classname: fa fa-lightbulb-o
-      liDescrption: If you are a large business organization, we are interested in customizing your own service plan so that more quality service providers can provide you with services.
+      liDescrption: Customized plans could be provided for large business organizations to help them gain access to more quality service providers.
   team:
     subTitle: APRON NETWORK'S
     title: Project Team
-    li1Descrption: Postgraduate Diploma in Computing, Unitec Institute of Technology,Auckland. and Doctor of Information Security, Harbin Institute of Technology. Many years of Ethereum &Eos technological development experience.He has successfully led many blockchain projects to the ground and is a fanatic follower of blockchain technology.
-    li2Descrption: Sean holds a PhD from Asia Gaa Ulster University and has been working in the digital world. Has many years of rich experience in marketing. As a big fan of blockchain, he has been active in various frontier communities and has many years of experience in researching digital currency.
-    li3Descrption: Graduated from United States and university. Experienced Technical Manager with a demonstrated history of working in the computer and network security industry. Skilled at Data Centers, corporate services, and production, customer facing infrastructures globally. Strong professional graduated from American InterContinental University.
+    li1Descrption: PhD in Information Security,Harbin Institute of Technology, China.Earlier,Yifei gained his Master’s Degree in Computing at Unitec Institute of Technology,Auckland.As a fanatic follower of blockchain technology,Yifei has a wealth of experience in Ethereum & Eos technological development and led many blockchain projects successfully.
+    li2Descrption: Sean holds a PhD from Asia Gaa Ulster University and has been working in the digital world for many years.As a big fan of blockchain technology,he has been active in various outstanding communities and has a wealth of experience in researching crypto-currency,especially in the field of marketing.
+    li3Descrption: Jim graduated from AmericanInter-Continental University.On top of an experienced technical manager with a demonstrated history of working in the computer and network security industry,he is skilled at Data Centers,corporate services,and production,customer facing infrastructures globally.
   media:
     description: Don’t miss to follow us on our Social networks.
   roadmaptop:
