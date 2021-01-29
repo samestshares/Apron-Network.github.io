@@ -15,14 +15,14 @@ nav:
 homepage:
   slides:
     title: 去中心化的基础设置服务网络
-    description: 为 DApp 开发、DApp 使用者、基础设置运营服务的基础设施平台
+    description: 一个为DApp开发者、DApp用户、运营商提供基础设施服务的去中心化平台
     button:  开始
   advantage:
     subTitle: 我们专注于
     title: 基础设施服务
     li1Title: 快速
     li1Descrption: DApp 开发者可以通过 Apron API 快速连接到网络
-    li2Title: 多选择
+    li2Title: 用户引导
     li2Descrption: Apron Market 中服务排名可以为 DApp 开发者提供更多选择
     li3Title: 节省成本
     li3Descrption: DApp 按使用需求支付费用，可以更好节省成本
@@ -53,19 +53,19 @@ homepage:
   labslist:
     - liTitle: 强力支持
       classname: fa fa-pencil-square-o
-      liDescrption: 我们有全球各地的专家，可以为 Apron Network 提供全面的技术支持和技术保障
+      liDescrption: 我们有全球各地的专家为 Apron Network 提供全面的技术支持和技术保障
     - liTitle: 商业扶持
       classname: fa fa-television
-      liDescrption: 如果您有好的 DApp 项目，我们可以为您提供一部分 Apron Token 支持你使用 API 服务
+      liDescrption: 如果你在Apron上建立DApp项目，我们可以为您提供一部分 Apron Token作为奖励以支持你使用 API 服务
     - liTitle: 特殊定制
       classname: fa fa-lightbulb-o
-      liDescrption: 如果您是大型商业组织，我们很有兴趣为您定制专属的服务计划，让更多优质服务商为您提供服务
+      liDescrption: 我们可以为大型企业组织提供定制计划，帮助它们获得更多的优质服务提供者。
   team:
     subTitle: APRON NETWORK
     title: 项目团队
-    li1Descrption: 奥克兰UNITEC理工学院计算机研究生,哈尔滨工业大学信息安全博士。拥有多年以太坊和Eos技术开发经验。成功地领导了许多区块链项目，是区块链技术的狂热粉丝
-    li2Descrption: Sean 拥有Asia Gaa Ulster大学的博士学位，一直在数字世界工作。有多年丰富的市场营销经验。是一直活跃在各个前沿社区的区块链忠实粉丝，在研究数字货币方面有着多年的经验
-    li3Descrption: 毕业于美国洲际大学，具有很强的专业性强。是经验丰富的技术经理，有计算机和网络安全行业工作经验。精通数据中心、企业服务和面向全球客户的生产基础设施。
+    li1Descrption: 哈尔滨工业大学信息安全博士，早年在奥克兰Unitec理工学院获得计算机硕士学位。作为区块链技术的狂热追随者，Yifei在Ethereum & Eos技术开发方面有着丰富的经验，并成功领导了多个区块链项目。
+    li2Descrption: Sean拥有Asia Gaa Ulster大学的博士学位，并在数字界工作多年，作为区块链技术的忠实粉丝，他一直活跃在各种优秀的社区中，在研究加密货币，尤其是营销领域有着丰富的经验。
+    li3Descrption: Jim毕业于美国洲际大学，作为一名经验丰富的技术经理，他曾在计算机和网络安全行业工作过，精通数据中心、企业服务和生产，以及面向全球客户的基础设施。
   media:
     description: 不要错过在社交网络上关注我们
   roadmaptop:
