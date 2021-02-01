@@ -45,4 +45,5 @@ jobs:
           publish_branch: main
           publish_dir: _site
           enable_jekyll: true
+          cname: apron.network
 
