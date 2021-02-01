@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "bundle exec jekyll serve"
+    "test": "bundle exec jekyll serve",
+    "username": "git config user.name srdothunter",
+    "email": "git config user.email srdothunter@gmail.com"
   }
 }
