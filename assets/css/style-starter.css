@@ -9742,7 +9742,7 @@ a.link-style:before {
   position: absolute;
   content: '';
   background: var(--primary-color);
-  width: 0px;
+  width: 0;
   height: 1px;
   bottom: 13px;
   transition: all 0.5s ease; }
@@ -9920,7 +9920,7 @@ input:checked + .mode-container i.gg-moon {
   padding: 0; }
 
 header {
-  padding: 0px;
+  padding: 0;
   transition: all 0.4s ease 0s;
   height: 95px;
   padding: 20px 0;
@@ -9931,7 +9931,7 @@ header {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05); }
 
 header.nav-fixed {
-  padding: 0px;
+  padding: 0;
   background: var(--bg-color);
   height: 80px;
   padding: 15px 0;
@@ -9939,8 +9939,8 @@ header.nav-fixed {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05); }
 
 .w3l-header-4 .navbar .navbar-brand {
-  margin-right: 0px;
-  padding: 0px;
+  margin-right: 0;
+  padding: 0;
   color: var(--heading-color);
   font-size: 30px;
   padding: 0;
@@ -9961,7 +9961,7 @@ header.nav-fixed {
   padding-right: 0; }
 
 .w3l-header-4 .navbar-expand-lg .navbar-nav .nav-link {
-  padding: 0px 10px;
+  padding: 0 10px;
   color: #999;
   background: transparent;
   font-size: 16px;
@@ -10023,7 +10023,7 @@ header.nav-fixed {
   font-size:14px;
 }
 .w3l-header-4 .absolute-top {
-  padding: 20px 0px;
+  padding: 20px 0;
   background: var(--bg-color);
   border-bottom: none;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05); }
@@ -10102,7 +10102,7 @@ header.nav-fixed {
 
 .w3l-header-4 .pop-overlay {
   position: fixed;
-  top: 0px;
+  top: 0;
   left: 0;
   right: 0;
   transition: opacity 0ms;
@@ -10152,15 +10152,15 @@ button.navbar-toggler.collapsed .icon-expand {
 
 @media (max-width: 991px) {
   .w3l-header-4 .absolute-top {
-    padding: 20px 0px 20px; }
+    padding: 20px 0 20px; }
   .w3l-header-4 div#navbarNav {
-    margin-left: 0px; }
+    margin-left: 0; }
   .w3l-header-4 .navbar-toggler {
     background: var(--bg-color);
     padding: 8px 12px;
-    margin-top: 0px;
+    margin-top: 0;
     outline: none;
-    margin-right: 0px;
+    margin-right: 0;
     cursor: pointer;
     border-radius: 5px;
     color: var(--primary-color);
@@ -10264,7 +10264,7 @@ button.navbar-toggler.collapsed .icon-expand {
 
 @media only screen and (max-width: 1080px) {
   .w3l-clients img {
-    padding: 5px 0px; } }
+    padding: 5px 0; } }
 
 @media only screen and (max-width: 992px) {
   .w3l-about-breadcrumb {
@@ -10334,7 +10334,7 @@ a.text-btn {
   padding: 0;
   padding-bottom: 5px;
   box-shadow: none;
-  border-radius: 0px;
+  border-radius: 0;
   border-bottom: 2px solid var(--primary-color); }
 
 a.text-btn:hover {
@@ -10474,7 +10474,7 @@ a.text-btn:hover span.fa {
     background-color: transparent;
     position: relative;
     z-index: 1;
-    margin-top: 0px; } }
+    margin-top: 0; } }
 
 @media (max-width: 480px) {
   .w3l-bottom-grids-6 h4 a.title-head {
@@ -10492,7 +10492,7 @@ a.text-btn:hover span.fa {
   color: var(--para-color); }
 
 .w3l-features .grids-1 {
-  margin-top: 0px;
+  margin-top: 0;
   padding: 40px 30px; }
 
 .w3l-features .feature-grid-left {
@@ -10584,7 +10584,7 @@ a.text-btn:hover span.fa {
     font-size: 30px;
     margin-bottom: 20px; }
   .w3l-features p.text-para {
-    margin: 0px;
+    margin: 0;
     margin-bottom: 10px; }
   .w3l-features h4 a.title-head {
     margin-bottom: 7px; }
@@ -10593,7 +10593,7 @@ a.text-btn:hover span.fa {
   .w3l-features .w3l-feature-grid {
     padding: 50px 0; }
   .w3l-features .button-effe-2 {
-    margin-top: 0px; } }
+    margin-top: 0; } }
 
 @media (max-width: 440px) {
   .w3l-features p.text-para {
@@ -10657,7 +10657,7 @@ p.counter {
 
 @media only screen and (max-width: 736px) {
   p.counter {
-    margin: 0px 0px;
+    margin: 0;
     line-height: 60px; } }
 
 @media only screen and (max-width: 415px) {
@@ -10691,7 +10691,7 @@ p.counter {
   margin-bottom: 5px; }
 
 .w3l-footer .footer-list-28 ul li:last-child {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .w3l-footer .footer-list-28 ul li a,
 .w3l-footer .footer-list-28 ul li p {
@@ -10956,7 +10956,7 @@ ul.social-icons li.discord  img{
 
 .w3l-specification-6 .counter-6-inf-left {
   padding: 4em 4em;
-  background: url(../images/bg2.jpg) no-repeat 0px 0px;
+  background: url(../images/bg2.jpg) no-repeat 0 0;
   background-size: cover;
   z-index: 0;
   position: relative;
@@ -10982,10 +10982,10 @@ ul.social-icons li.discord  img{
 
 
 .w3l-specification-6 .specification:last-child {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .w3l-specification-6 .specification.last-one {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .w3l-specification-6 .counter-6-inf-left h3 {
   color: #fff;
@@ -10996,7 +10996,7 @@ ul.social-icons li.discord  img{
   text-align: left;
   margin-bottom: 0;
   font-size: 22px;
-  margin: 0px 0 6px 0;
+  margin: 0 0 6px 0;
   font-weight: 600;
   display: inline-block; }
 
@@ -11035,7 +11035,7 @@ ul.social-icons li.discord  img{
 @media all and (max-width: 1080px) {
   .w3l-specification-6 .counter-6-inf-right h6 {
     font-size: 20px;
-    margin: 0px 0 6px 0; }
+    margin: 0 0 6px 0; }
   .w3l-specification-6 .specification p {
     font-size: 16px; } }
 
@@ -11053,7 +11053,7 @@ ul.social-icons li.discord  img{
     grid-gap: 20px; }
   .w3l-specification-6 .specification:nth-child(3),
   .w3l-specification-6 .specification:nth-child(4) {
-    margin-bottom: 0px; }
+    margin-bottom: 0; }
   .w3l-specification-6 .counter-6-inf-right.counter-6-inf-right2 {
     padding: 4em 4em;
     display: grid;
@@ -11138,7 +11138,7 @@ ul.social-icons li.discord  img{
   outline: none;
   width: 100%;
   font-size: 16px;
-  padding: 0px 15px;
+  padding: 0 15px;
   padding-left: 15px;
   color: var(--para-color);
   height: 54px;
@@ -11196,7 +11196,7 @@ ul.social-icons li.discord  img{
   overflow: hidden; }
 
 .w3l-team-main .team-title {
-  margin: 25px 0 0px;
+  margin: 25px 0 0;
   font-size: 20px;
   color: var(--heading-color);
   font-weight: 600;
@@ -11266,7 +11266,7 @@ ul.social-icons li.discord  img{
 
 @media all and (max-width: 991px) {
   .w3l-team-main .team-title {
-    margin: 18px 0 0px; } }
+    margin: 18px 0 0; } }
 
 @media all and (max-width: 568px) {
   .team-row {
@@ -11515,7 +11515,7 @@ form.signin-form {
   outline: none;
   width: 100%;
   font-size: 16px;
-  padding: 0px 15px;
+  padding: 0 15px;
   font-weight: 500;
   margin-bottom: 25px;
   color: var(--heading-color);
@@ -11603,7 +11603,7 @@ iframe {
   z-index: 1;
   padding: 30px;
   border-radius: 3px;
-  box-shadow: 0px 0px 10px #00000021;
+  box-shadow: 0 0 10px #00000021;
 }
 .testimonials-sec .testimonial-box:before{
   content: "\efcd";
